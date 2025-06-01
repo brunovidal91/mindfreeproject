@@ -423,27 +423,51 @@ a:hover[b-9fyw5s05nr]{
     }
 }
 
-.clean-delete-card[b-qy3wizfeoj] {
+.close-card[b-qy3wizfeoj] {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: var(--verdePrincipal);
     position: fixed;
     right: 5px;
-    bottom: 130px;
+    bottom: 210px;
     visibility: hidden;
 }
 
-.clean-delete-card:hover[b-qy3wizfeoj] {
+.close-card:hover[b-qy3wizfeoj] {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.clean-delete-card.riseCardAnimation[b-qy3wizfeoj] {
+.close-card.riseCardAnimation[b-qy3wizfeoj] {
     animation: riseDeleteCard-b-qy3wizfeoj .1s linear forwards;
 }
 
-.clean-delete-card.leaveCardAnimation[b-qy3wizfeoj] {
+.close-card.leaveCardAnimation[b-qy3wizfeoj] {
+    animation: leaveDeleteCard-b-qy3wizfeoj .1s linear forwards;
+}
+
+.edit-card[b-qy3wizfeoj] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--amareloLoad);
+    position: fixed;
+    right: 5px;
+    bottom: 130px;
+    visibility: hidden;
+}
+
+.edit-card:hover[b-qy3wizfeoj] {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.edit-card.riseCardAnimation[b-qy3wizfeoj] {
+    animation: riseDeleteCard-b-qy3wizfeoj .1s linear forwards;
+}
+
+.edit-card.leaveCardAnimation[b-qy3wizfeoj] {
     animation: leaveDeleteCard-b-qy3wizfeoj .1s linear forwards;
 }
 
@@ -460,10 +484,40 @@ a:hover[b-9fyw5s05nr]{
     background-color: aquamarine;
 }
 
-@media (max-width: 950px){
+.month-container[b-qy3wizfeoj]{
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-input[b-qy3wizfeoj] {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 950px) {
     .total-container[b-qy3wizfeoj]{
         visibility: hidden;
     }
+
+    .inputs-container[b-qy3wizfeoj]{
+        flex-direction: column;
+    }
+
+    .month-container[b-qy3wizfeoj]{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .btn-container[b-qy3wizfeoj]{
+        display: flex;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
 /* /Pages/Usuarios.razor.rz.scp.css */
 .user-form-container[b-o9nkrfuly4]{

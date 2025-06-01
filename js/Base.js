@@ -27,3 +27,8 @@ function OpenMyModal() {
         });
     });
 }
+
+function SetFocus(id) {
+    const inputToFocus = document.getElementById(id);
+    inputToFocus && inputToFocus.focus();
+}
