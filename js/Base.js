@@ -32,3 +32,8 @@ function SetFocus(id) {
     const inputToFocus = document.getElementById(id);
     inputToFocus && inputToFocus.focus();
 }
+
+//function changeLineColor() {
+//    $(".line").closest("div").css('background-color', 'green');
+//    $(".line").css('background-color', 'red');
+//}
