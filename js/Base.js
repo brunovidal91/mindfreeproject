@@ -12,8 +12,6 @@ function CloseButtons() {
 		});
 	});
 }
-
-
 function OpenMyModal() {
 
     const openModalButtons = document.querySelectorAll(".openModal");
@@ -27,13 +25,25 @@ function OpenMyModal() {
         });
     });
 }
-
 function SetFocus(id) {
     const inputToFocus = document.getElementById(id);
     inputToFocus && inputToFocus.focus();
 }
+const previousSelected = [];
+function changeLineColor(id) {
 
-//function changeLineColor() {
-//    $(".line").closest("div").css('background-color', 'green');
-//    $(".line").css('background-color', 'red');
-//}
+    if (previousSelected.length > 0) {
+        turnBackLineColor(previousSelected[0]);
+        previousSelected.pop();
+
+    }
+
+    previousSelected.push(id);
+    //$(`#${id}`).closest("div").css('background-color', '#ff0');
+    $(`#${id}`).css('border-width', '2px');
+    $(`#${id}`).css('border-color', 'tomato');
+
+}
+function turnBackLineColor(id) {
+    $(`#${id}`).css('border-color', '#eee');
+}
