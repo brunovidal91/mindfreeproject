@@ -32,7 +32,10 @@
 .containerLogin[b-bi9m9yh4lc]{
     width: 100vw;
     height: 100vh;
-    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*    background-color: aliceblue;*/
 /*    background-image: url('bgimg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,14 +43,14 @@
 
 }
 
-.img-bkg[b-bi9m9yh4lc]{
+/*.img-bkg{
     width: 100%;
-    height: 100%;
+    height: 100%;*/
 /*    background-color: rgba(0, 0, 0, 0.75);*/
-    display: flex;
+    /*display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-qhqvot6ore] {
     position: relative;
@@ -276,7 +279,7 @@ main[b-qhqvot6ore] {
 
 .results-card[b-xy8lf02n18] {
     width: 220px;
-    height: 60px;
+    height: 70px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -386,7 +389,7 @@ a:hover[b-9fyw5s05nr]{
     transition: all .3s;
 }
 
-.login-container[b-9fyw5s05nr]{
+.login-zone[b-9fyw5s05nr]{
     width: 740px;
     height: 350px;
     background-color: var(--roxoCard);
@@ -395,7 +398,7 @@ a:hover[b-9fyw5s05nr]{
     flex-direction: row;
 }
 
-.container_logo[b-9fyw5s05nr]{
+.login_container_logo[b-9fyw5s05nr]{
     width: 300px;
     height: 350px;
     display: flex;
@@ -432,23 +435,29 @@ a:hover[b-9fyw5s05nr]{
     letter-spacing: 0.01px;
 }
 
+#login_page_container[b-9fyw5s05nr]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 800px) {
-    .login-container[b-9fyw5s05nr]{
+    .login-zone[b-9fyw5s05nr] {
         flex-direction: column;
-        width: 350px;
+        width: 355px;
         height: 500px;
     }
 
-    .container_logo[b-9fyw5s05nr]{
-        height: 300px;
-        width: 350px;
-
+    .login_container_logo[b-9fyw5s05nr] {
+        height: 355px;
+        width: 300px;
     }
 
 
-    .container_input[b-9fyw5s05nr]{
+    .container_input[b-9fyw5s05nr] {
         width: 350px;
         height: 600px;
+        border-left: 0px;
     }
 
     .logomarca[b-9fyw5s05nr]{
@@ -609,7 +618,6 @@ a:hover[b-9fyw5s05nr]{
 .break-point[b-qy3wizfeoj] {
     margin-top: 140px;
 }
-
 
 .input-area[b-qy3wizfeoj] {
     width: 60%;
